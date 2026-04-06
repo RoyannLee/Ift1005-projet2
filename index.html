@@ -63,7 +63,7 @@
                         <option value="En cours">En cours</option>
                         <option value="Vu">Vu</option>
                     </select>
-                    
+
                     <button type="submit" id="btnAjouter">+ Ajouter</button>
                 </form>
         </section>
@@ -71,10 +71,63 @@
 
         <section id="Selection">
             <h1>Sélection cinéma</h1>
+
+            <div id="grid-film">
+
+            <div class="film-box">
+                <img src="assets/scifi.png" class="imageSelection">
+                <h2 class="titreFilm">Inception</h2>
+                
+                <p class="description">Un thriller de science-fiction sur les rêves et la manipulation de l'esprit.</p>
+            </div>
+
+            <div class="film-box">
+                <img src="assets/romance.png" class="imageSelection">
+                <h2 class="titreFilm">Titanic</h2>
+                
+                <p class="description">Une histoire d'amour dramatique sur fond de catastrophe maritime.</p>
+            </div>
+
+            <div class="film-box">
+                <img src="assets/action.png" class="imageSelection">
+                <h2 class="titreFilm">Batman</h2>
+                
+                <p class="description">Un héro sombre affront le crime dans une ville intense et dangereuse.</p>
+            </div>
+
+            <div class="film-box">
+                <img src="assets/fantasy.png" class="imageSelection">
+                <h2 class="titreFilm">Harry Potter</h2>
+                
+                <p class="description">Une saga fantastique dans un univers magique rempli d'aventure.</p>
+            </div>
+
+            </div>
         </section>
 
         <section id="Stat">
             <h1>Statistiques</h1>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <p>Total</p>
+                    <h3 id="stat-total">3</h3>
+                </div>
+        
+                <div class="stat-box">
+                    <p>À voir</p>
+                    <h3 id="stat-avoir">1</h3>
+                </div>
+        
+                <div class="stat-box">
+                    <p>En cours</p>
+                    <h3 id="stat-encours">1</h3>
+                </div>
+        
+                <div class="stat-box">
+                    <p>Vu</p>
+                    <h3 id="stat-vu">1</h3>
+                </div>
+            </div>
         </section>
 
         <section id="Liste">
@@ -84,6 +137,13 @@
 
         <section id="media">
             <h1>Bande-annonce de votre film préféré</h1>
+
+            <div class="video">
+                <iframe 
+                    src="https://www.youtube.com/embed/YoHD9XEInc0" 
+                    title="Bande-annonce Inception">
+                </iframe>
+            </div>
         </section>
     
     </main>
