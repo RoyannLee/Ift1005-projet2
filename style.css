@@ -34,6 +34,8 @@ nav {
     color:rgba(256, 256, 256);
     text-decoration: none
  }
+
+
 main {
     max-width: 1000px;
     margin: 0 auto;
@@ -44,13 +46,60 @@ main {
 body {
     margin: 0;
     padding: 0;
-    background-color: #ffffff; /* Optionnel : la couleur de fond gris clair typique de votre maquette */
 }
  
+#Ajouter {
+    background-color: #cad9f1;
+    margin: 0 auto;
+}
+
+fieldset {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#form_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+
+.form_grid_row {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1; 
+}
+
+.form_grid_row select, .form_grid_row input {
+    height: 40px;
+    padding: 0 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #334155;
+    background-color: #fff;
+    outline: none;
+}
+
 #selection{
     background-color: #e9eef6;
 }
 
+button {
+    margin-top: 10px;
+    background-color: #1e2d40;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
 
 .imageSelection {
     height: 50px;
@@ -61,22 +110,53 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    padding: 40px;
+    /* padding: 40px; */
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.film-box {
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.type-title {
+    display: flex;
+}
+
+.type-title h2 {
+    margin-left: 10px;
 }
 
 #stats-grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 3 colonnes de largeur égale */
     gap: 30px;
-    padding: 40px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
+.stat-box{
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    text-align: center;
+}
 
+#liste-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 16px;
+}
 
+#filtre-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 12px;
+    color: #1e2d40;
+}
 
 footer {
     background-color: rgba(15, 23, 42);
