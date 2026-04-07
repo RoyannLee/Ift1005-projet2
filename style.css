@@ -44,9 +44,38 @@ main {
 body {
     margin: 0;
     padding: 0;
-    background-color: #f1f5f9; /* Optionnel : la couleur de fond gris clair typique de votre maquette */
+    background-color: #ffffff; /* Optionnel : la couleur de fond gris clair typique de votre maquette */
 }
  
+#selection{
+    background-color: #e9eef6;
+}
+
+
+.imageSelection {
+    height: 50px;
+    width: auto;
+}
+
+#grid-film{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#stats-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 colonnes de largeur égale */
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
 
 
 footer {
