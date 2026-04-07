@@ -34,73 +34,90 @@
     </header>
 
     <main>
-        <section id="Ajouter">
-            <h1>Ajouter un film ou une série</h1>
-                <p>Remplissez le formulaire pour ajouter un film à votre collection.</p>
+        <fieldset>
+            <section id="Ajouter">
+                <h1>Ajouter un film ou une série</h1>
+                    <p>Remplissez le formulaire pour ajouter un film à votre collection.</p>
 
-                <form id="formulaireAjout">
-                    <label for="titre">Titre</label>
-                    <input type="text" id="titre" placeholder="Ex. Inception" required>
+                    <form>
+                        <div id="form_grid">
+                            <div class="form_grid_row">
+                                <label for="titre">Titre</label>
+                                <input type="text" id="titre" placeholder="Ex. Inception" required>
+                            </div>
 
-                    <label for="genre">Genre</label>
-                    <select id="genre" required>
-                        <option value="" disabled selected>Choisir un genre</option>
-                        <option value="Action">Action</option>
-                        <option value="Romance">Romance</option>
-                        <option value="Science-fiction">Science-fiction</option>
-                        <option value="Fantaisie">Fantaisie</option>
-                        <option value="Comédie">Comédie</option>
-                        <option value="Drame">Drame</option>
-                        <option value="Animation">Animation</option>
-                        <option value="Documentaire">Documentaire</option>
-                        <option value="Série">Série</option>
-                    </select>
+                            <div class="form_grid_row">
+                                <label for="genre">Genre</label>
+                                <select id="genre" required>
+                                    <option value="" disabled selected>Choisir un genre</option>
+                                    <option value="Action">Action</option>
+                                    <option value="Romance">Romance</option>
+                                    <option value="Science-fiction">Science-fiction</option>
+                                    <option value="Fantaisie">Fantaisie</option>
+                                    <option value="Comédie">Comédie</option>
+                                    <option value="Drame">Drame</option>
+                                    <option value="Animation">Animation</option>
+                                    <option value="Documentaire">Documentaire</option>
+                                    <option value="Série">Série</option>
+                                </select>
+                            </div>
 
-                    <label for="statut">Statut</label>
-                    <select id="statut" required>
-                        <option value="" disabled selected>Choisir un statut</option>
-                        <option value="À voir">À voir</option>
-                        <option value="En cours">En cours</option>
-                        <option value="Vu">Vu</option>
-                    </select>
-
-                    <button type="submit" id="btnAjouter">+ Ajouter</button>
-                </form>
-        </section>
-
-
+                            <div class="form_grid_row">
+                                <label for="statut">Statut</label>
+                                <select id="statut" required>
+                                    <option value="" disabled selected>Choisir un statut</option>
+                                    <option value="À voir">À voir</option>
+                                    <option value="En cours">En cours</option>
+                                    <option value="Vu">Vu</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <button type="submit">+ Ajouter</button>
+                    </form>
+            </section>
+        </fieldset>
+        
         <section id="Selection">
             <h1>Sélection cinéma</h1>
 
             <div id="grid-film">
 
-            <div class="film-box">
-                <img src="assets/scifi.png" class="imageSelection">
-                <h2 class="titreFilm">Inception</h2>
-                
-                <p class="description">Un thriller de science-fiction sur les rêves et la manipulation de l'esprit.</p>
-            </div>
+                <div class="film-box">
+                    <div class="type-title">
+                        <img src="assets/scifi.png" class="imageSelection">
+                        <h2 class="titreFilm">Inception</h2>
+                    </div>
+                    
+                    <p class="description">Un thriller de science-fiction sur les rêves et la manipulation de l'esprit.</p>
+                </div>
 
-            <div class="film-box">
-                <img src="assets/romance.png" class="imageSelection">
-                <h2 class="titreFilm">Titanic</h2>
-                
-                <p class="description">Une histoire d'amour dramatique sur fond de catastrophe maritime.</p>
-            </div>
+                <div class="film-box">
+                    <div class="type-title">
+                        <img src="assets/romance.png" class="imageSelection">
+                        <h2 class="titreFilm">Titanic</h2>
+                    </div>
 
-            <div class="film-box">
-                <img src="assets/action.png" class="imageSelection">
-                <h2 class="titreFilm">Batman</h2>
-                
-                <p class="description">Un héro sombre affront le crime dans une ville intense et dangereuse.</p>
-            </div>
+                    <p class="description">Une histoire d'amour dramatique sur fond de catastrophe maritime.</p>
+                </div>
 
-            <div class="film-box">
-                <img src="assets/fantasy.png" class="imageSelection">
-                <h2 class="titreFilm">Harry Potter</h2>
-                
-                <p class="description">Une saga fantastique dans un univers magique rempli d'aventure.</p>
-            </div>
+                <div class="film-box">
+                    <div class="type-title">
+                        <img src="assets/action.png" class="imageSelection">
+                        <h2 class="titreFilm">Batman</h2>
+                    </div>
+
+                    <p class="description">Un héro sombre affront le crime dans une ville intense et dangereuse.</p>
+                </div>
+
+                <div class="film-box">
+                    <div class="type-title">
+                        <img src="assets/fantasy.png" class="imageSelection">
+                        <h2 class="titreFilm">Harry Potter</h2>
+                    </div>
+
+                    <p class="description">Une saga fantastique dans un univers magique rempli d'aventure.</p>
+                </div>
 
             </div>
         </section>
@@ -131,7 +148,29 @@
         </section>
 
         <section id="Liste">
-            <h1>Mes Films et Séries</h1>
+            <div id="liste-header">
+                <h1>Mes Films et Séries</h1>
+                <div id="filtre-container">
+                    <label for="filtre">Filtrer</label>
+                    <select id="filtre">
+                        <option value="Tous">Tous</option>
+                        <option value="À voir">À voir</option>
+                        <option value="En cours">En cours</option>
+                        <option value="Vu">Vu</option>
+                    </select>
+                </div>
+            </div>
+
+            <table id="tableau">
+                <thead>
+                    <tr>
+                        <th>Titre</th>
+                        <th>Genre</th>
+                        <th>Statut</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+            </table>
         </section>
 
 
