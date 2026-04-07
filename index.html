@@ -79,98 +79,104 @@
         </fieldset>
         
         <section id="Selection">
-            <h1>Sélection cinéma</h1>
+            <div class="content">
+                <h1>Sélection cinéma</h1>
 
-            <div id="grid-film">
+                <div id="grid-film">
 
-                <div class="film-box">
-                    <div class="type-title">
-                        <img src="assets/scifi.png" class="imageSelection">
-                        <h2 class="titreFilm">Inception</h2>
-                    </div>
-                    
-                    <p class="description">Un thriller de science-fiction sur les rêves et la manipulation de l'esprit.</p>
-                </div>
-
-                <div class="film-box">
-                    <div class="type-title">
-                        <img src="assets/romance.png" class="imageSelection">
-                        <h2 class="titreFilm">Titanic</h2>
+                    <div class="film-box">
+                        <div class="type-title">
+                            <img src="assets/scifi.png" class="imageSelection">
+                            <h2 class="titreFilm">Inception</h2>
+                        </div>
+                        
+                        <p class="description">Un thriller de science-fiction sur les rêves et la manipulation de l'esprit.</p>
                     </div>
 
-                    <p class="description">Une histoire d'amour dramatique sur fond de catastrophe maritime.</p>
-                </div>
+                    <div class="film-box">
+                        <div class="type-title">
+                            <img src="assets/romance.png" class="imageSelection">
+                            <h2 class="titreFilm">Titanic</h2>
+                        </div>
 
-                <div class="film-box">
-                    <div class="type-title">
-                        <img src="assets/action.png" class="imageSelection">
-                        <h2 class="titreFilm">Batman</h2>
+                        <p class="description">Une histoire d'amour dramatique sur fond de catastrophe maritime.</p>
                     </div>
 
-                    <p class="description">Un héro sombre affront le crime dans une ville intense et dangereuse.</p>
-                </div>
+                    <div class="film-box">
+                        <div class="type-title">
+                            <img src="assets/action.png" class="imageSelection">
+                            <h2 class="titreFilm">Batman</h2>
+                        </div>
 
-                <div class="film-box">
-                    <div class="type-title">
-                        <img src="assets/fantasy.png" class="imageSelection">
-                        <h2 class="titreFilm">Harry Potter</h2>
+                        <p class="description">Un héro sombre affront le crime dans une ville intense et dangereuse.</p>
                     </div>
 
-                    <p class="description">Une saga fantastique dans un univers magique rempli d'aventure.</p>
-                </div>
+                    <div class="film-box">
+                        <div class="type-title">
+                            <img src="assets/fantasy.png" class="imageSelection">
+                            <h2 class="titreFilm">Harry Potter</h2>
+                        </div>
 
+                        <p class="description">Une saga fantastique dans un univers magique rempli d'aventure.</p>
+                    </div>
+
+                </div>
             </div>
         </section>
 
         <section id="Stat">
-            <h1>Statistiques</h1>
-            <div id="stats-grid">
-                <div class="stat-box">
-                    <p>Total</p>
-                    <h3 id="stat-total">3</h3>
-                </div>
-        
-                <div class="stat-box">
-                    <p>À voir</p>
-                    <h3 id="stat-avoir">1</h3>
-                </div>
-        
-                <div class="stat-box">
-                    <p>En cours</p>
-                    <h3 id="stat-encours">1</h3>
-                </div>
-        
-                <div class="stat-box">
-                    <p>Vu</p>
-                    <h3 id="stat-vu">1</h3>
+            <div class="content">
+                <h1>Statistiques</h1>
+                <div id="stats-grid">
+                    <div class="stat-box">
+                        <p>Total</p>
+                        <h3 id="stat-total">3</h3>
+                    </div>
+            
+                    <div class="stat-box">
+                        <p>À voir</p>
+                        <h3 id="stat-avoir">1</h3>
+                    </div>
+            
+                    <div class="stat-box">
+                        <p>En cours</p>
+                        <h3 id="stat-encours">1</h3>
+                    </div>
+            
+                    <div class="stat-box">
+                        <p>Vu</p>
+                        <h3 id="stat-vu">1</h3>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="Liste">
-            <div id="liste-header">
-                <h1>Mes Films et Séries</h1>
-                <div id="filtre-container">
-                    <label for="filtre">Filtrer</label>
-                    <select id="filtre">
-                        <option value="Tous">Tous</option>
-                        <option value="À voir">À voir</option>
-                        <option value="En cours">En cours</option>
-                        <option value="Vu">Vu</option>
-                    </select>
+            <div class="content">
+                <div id="liste-header">
+                    <h1>Mes Films et Séries</h1>
+                    <div id="filtre-container">
+                        <label for="filtre">Filtrer</label>
+                        <select id="filtre">
+                            <option value="Tous">Tous</option>
+                            <option value="À voir">À voir</option>
+                            <option value="En cours">En cours</option>
+                            <option value="Vu">Vu</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
 
-            <table id="tableau">
-                <thead>
-                    <tr>
-                        <th>Titre</th>
-                        <th>Genre</th>
-                        <th>Statut</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-            </table>
+                <table id="tableau">
+                    <thead>
+                        <tr>
+                            <th>Titre</th>
+                            <th>Genre</th>
+                            <th>Statut</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
         </section>
 
 
