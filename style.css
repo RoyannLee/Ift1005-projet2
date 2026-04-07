@@ -1,0 +1,64 @@
+header {
+    background-color: rgba(15, 23, 42);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+nav {
+    max-width: 1000px;
+    margin: 0 auto; /* Centre le contenu */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+
+#Titre {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+#Titre img {
+    height: 50px;
+    width: auto;
+    margin-right: 15px;
+}
+ a {
+    color:rgba(256, 256, 256);
+    text-decoration: none
+ }
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 100px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f1f5f9; /* Optionnel : la couleur de fond gris clair typique de votre maquette */
+}
+ 
+
+
+footer {
+    background-color: rgba(15, 23, 42);
+    color: #ffffff;
+}
+
+#contenu-footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
