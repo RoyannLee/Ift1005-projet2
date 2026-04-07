@@ -34,48 +34,48 @@
     </header>
 
     <main>
-        <fieldset>
+        <fieldset class="content">
             <section id="Ajouter">
-                <h1>Ajouter un film ou une série</h1>
-                    <p>Remplissez le formulaire pour ajouter un film à votre collection.</p>
+                    <h1>Ajouter un film ou une série</h1>
+                        <p>Remplissez le formulaire pour ajouter un film à votre collection.</p>
 
-                    <form>
-                        <div id="form_grid">
-                            <div class="form_grid_row">
-                                <label for="titre">Titre</label>
-                                <input type="text" id="titre" placeholder="Ex. Inception" required>
-                            </div>
+                        <form>
+                            <div id="form_grid">
+                                <div class="form_grid_row">
+                                    <label for="titre">Titre</label>
+                                    <input type="text" id="titre" placeholder="Ex. Inception" required>
+                                </div>
 
-                            <div class="form_grid_row">
-                                <label for="genre">Genre</label>
-                                <select id="genre" required>
-                                    <option value="" disabled selected>Choisir un genre</option>
-                                    <option value="Action">Action</option>
-                                    <option value="Romance">Romance</option>
-                                    <option value="Science-fiction">Science-fiction</option>
-                                    <option value="Fantaisie">Fantaisie</option>
-                                    <option value="Comédie">Comédie</option>
-                                    <option value="Drame">Drame</option>
-                                    <option value="Animation">Animation</option>
-                                    <option value="Documentaire">Documentaire</option>
-                                    <option value="Série">Série</option>
-                                </select>
-                            </div>
+                                <div class="form_grid_row">
+                                    <label for="genre">Genre</label>
+                                    <select id="genre" required>
+                                        <option value="" disabled selected>Choisir un genre</option>
+                                        <option value="Action">Action</option>
+                                        <option value="Romance">Romance</option>
+                                        <option value="Science-fiction">Science-fiction</option>
+                                        <option value="Fantaisie">Fantaisie</option>
+                                        <option value="Comédie">Comédie</option>
+                                        <option value="Drame">Drame</option>
+                                        <option value="Animation">Animation</option>
+                                        <option value="Documentaire">Documentaire</option>
+                                        <option value="Série">Série</option>
+                                    </select>
+                                </div>
 
-                            <div class="form_grid_row">
-                                <label for="statut">Statut</label>
-                                <select id="statut" required>
-                                    <option value="" disabled selected>Choisir un statut</option>
-                                    <option value="À voir">À voir</option>
-                                    <option value="En cours">En cours</option>
-                                    <option value="Vu">Vu</option>
-                                </select>
+                                <div class="form_grid_row">
+                                    <label for="statut">Statut</label>
+                                    <select id="statut" required>
+                                        <option value="" disabled selected>Choisir un statut</option>
+                                        <option value="À voir">À voir</option>
+                                        <option value="En cours">En cours</option>
+                                        <option value="Vu">Vu</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
-                        
-                        <button type="submit">+ Ajouter</button>
-                    </form>
-            </section>
+                            
+                            <button type="submit">+ Ajouter</button>
+                        </form>
+                </section>
         </fieldset>
         
         <section id="Selection">
@@ -181,13 +181,15 @@
 
 
         <section id="media">
-            <h1>Bande-annonce de votre film préféré</h1>
+            <div class="content">
+                <h1>Bande-annonce de votre film préféré</h1>
 
-            <div class="video">
-                <iframe 
-                    src="https://www.youtube.com/embed/YoHD9XEInc0" 
-                    title="Bande-annonce Inception">
-                </iframe>
+                <div class="video">
+                    <iframe 
+                        src="https://www.youtube.com/embed/YoHD9XEInc0" 
+                        title="Bande-annonce Inception">
+                    </iframe>
+                </div>
             </div>
         </section>
     

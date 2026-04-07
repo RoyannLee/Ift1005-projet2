@@ -37,15 +37,20 @@ nav {
 
 
 main {
-    max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 0px;
     padding-top: 100px;
 }
 
 body {
     margin: 0;
     padding: 0;
+}
+
+.content {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 20px;
 }
  
 #Ajouter {
@@ -86,7 +91,7 @@ fieldset {
     outline: none;
 }
 
-#selection{
+#Selection{
     background-color: #e9eef6;
 }
 
@@ -117,8 +122,10 @@ button {
 
 .film-box {
     border: 1px solid #cbd5e1;
-    border-radius: 8px;
+    border-radius: 20px;
     padding: 20px;
+    background-color: #f3f4f6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .type-title {
@@ -128,6 +135,13 @@ button {
 .type-title h2 {
     margin-left: 10px;
 }
+
+
+#Stat{
+    background-color: #dde6f2;
+}
+
+
 
 #stats-grid{
     display: grid;
