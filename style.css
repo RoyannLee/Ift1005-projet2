@@ -48,6 +48,10 @@ body {
     background-color: #f3f4f6;
 }
 
+h1 {
+    color: #171b2b;
+}
+
 .content {
     max-width: 50%;
     margin: 0 auto;
@@ -179,6 +183,38 @@ button {
     gap: 4px;
     font-size: 12px;
     color: #1e2d40;
+}
+
+td button {
+    background-color: red;
+    color: white;
+}
+
+#tableau {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container {
+
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    overflow: hidden;
+}
+
+th {
+    text-align: left;
+    background-color: #f9fafb;
+    padding: 15px 10px;
+    border-bottom: 1px solid #eeeff2;
+}
+
+td {
+    padding: 10px 10px;
+    border-bottom: 1px solid #eeeff2;
+    vertical-align: middle;
 }
 
 
