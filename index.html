@@ -43,12 +43,12 @@
                             <div id="form_grid">
                                 <div class="form_grid_row">
                                     <label for="titre">Titre</label>
-                                    <input type="text" id="titre" placeholder="Ex. Inception" required>
+                                    <input type="text" id="titre" placeholder="Ex. Inception">
                                 </div>
 
                                 <div class="form_grid_row">
                                     <label for="genre">Genre</label>
-                                    <select id="genre" required>
+                                    <select id="genre">
                                         <option value="" disabled selected>Choisir un genre</option>
                                         <option value="Action">Action</option>
                                         <option value="Romance">Romance</option>
@@ -64,7 +64,7 @@
 
                                 <div class="form_grid_row">
                                     <label for="statut">Statut</label>
-                                    <select id="statut" required>
+                                    <select id="statut">
                                         <option value="" disabled selected>Choisir un statut</option>
                                         <option value="À voir">À voir</option>
                                         <option value="En cours">En cours</option>
@@ -130,22 +130,22 @@
                 <div id="stats-grid">
                     <div class="stat-box">
                         <p>Total</p>
-                        <h3 id="stat-total">3</h3>
+                        <h3 id="stat-total">0</h3>
                     </div>
             
                     <div class="stat-box">
                         <p>À voir</p>
-                        <h3 id="stat-avoir">1</h3>
+                        <h3 id="stat-avoir">0</h3>
                     </div>
             
                     <div class="stat-box">
                         <p>En cours</p>
-                        <h3 id="stat-encours">1</h3>
+                        <h3 id="stat-encours">0</h3>
                     </div>
             
                     <div class="stat-box">
                         <p>Vu</p>
-                        <h3 id="stat-vu">1</h3>
+                        <h3 id="stat-vu">0</h3>
                     </div>
                 </div>
             </div>
@@ -177,14 +177,6 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>titre film</td>
-                                <td>genre film</td>
-                                <td>statut film</td>
-                                <td>
-                                    <button class="supprimer">Supprimer</button>
-                                </td>
-                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -208,12 +200,13 @@
 
     <footer>
     <div id="contenu-footer">
-        <p>&copy; 2026 IFT1005;</p>
+        <p>&copy; 2026 IFT1005</p>
         <div>
             <a href="mailto:contact@email.com">Contact</a> &nbsp;
             <a href="">Privacy</a>
         </div>
     </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
