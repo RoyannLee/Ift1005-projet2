@@ -286,3 +286,39 @@ footer {
     align-items: center;
     padding: 20px;
 }
+
+@media (max-width: 900px) {
+    nav,
+    .content,
+    #contenu-footer {
+        max-width: 90%;
+    }
+
+    #form_grid,
+    #grid-film,
+    #stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #Titre {
+        font-size: 20px;
+    }
+
+    #Titre img {
+        height: 35px;
+    }
+
+    #liste-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    video {
+        height: auto;
+    }
+
+    table, thead, tbody, th, td, tr {
+        font-size: 13px;
+    }
+}
