@@ -1,3 +1,5 @@
+//Royann Brady Heriniaina Lee (20286513)
+//Trinh Ngo (20228204)
 let films = [
     { titre: "Inception", genre: "Science-fiction", statut: "Vu" },
     { titre: "Stranger Things", genre: "Série", statut: "En cours" },
