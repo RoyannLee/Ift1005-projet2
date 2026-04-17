@@ -153,7 +153,7 @@ button {
 
 #stats-grid{
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 3 colonnes de largeur égale */
+    grid-template-columns: repeat(4, 1fr); /* 4 colonnes de largeur égale */
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
